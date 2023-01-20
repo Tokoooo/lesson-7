@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    height: 100vh;
+    object-fit: contain;
+    background: url("images/road.jpg") center repeat-x;
+    background-size: cover;
+}
+
+.car-1 {
+    position: absolute;
+    left: 200px;
+    bottom: 50px;
+    width: 200px;
+    animation: moving 5s linear infinite;
+}
+
+.car-2 {
+    position: absolute;
+    right: 200px;
+    bottom: 50px;
+    width: 200px;
+    animation: moving2 5s linear infinite;
+}
+
+
+
+@keyframes moving {
+    0% {
+        transform: translateX(0px);
+    }30%{transform: translateX(150px)}
+    60%{transform: translateX(500px)}
+    100%{transform: translateY(0px)}
+}@keyframes moving2 {
+     0% {
+         transform: translateX(0px);
+     }30%{transform: translateX(-150px)}
+     60%{transform: translateX(-500px)}
+     100%{transform: translateY(0px)}
+ }
